@@ -24,7 +24,7 @@
 					<tr style="height: 56px;">
 						<td id="projectalign" style="padding-left: 0.5em;">
 							<div id="projectname">tchecker
-								&#160;<span id="projectnumber">0.3p</span>
+								&#160;<span id="projectnumber">0.5</span>
 							</div>
 						</td>
 					</tr>
@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;std::size_t <a class="code" href="classhash.html">hash</a>(<a class="code" href="classcto__t.html">cto_t</a> <span class="keyword">const</span> &amp; o) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(o.x()); }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">bool</span> operator==(<a class="code" href="classcto__t.html">cto_t</a> <span class="keyword">const</span> &amp; o1, <a class="code" href="classcto__t.html">cto_t</a> <span class="keyword">const</span> &amp; o2) { <span class="keywordflow">return</span> ((o1.x() == o2.x()) &amp;&amp; (o1.y() == o2.y())); }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="db__safe_8hh.html#a0c067befc5a863b70a62802f082fd088">operator==</a>(<a class="code" href="classcto__t.html">cto_t</a> <span class="keyword">const</span> &amp; o1, <a class="code" href="classcto__t.html">cto_t</a> <span class="keyword">const</span> &amp; o2) { <span class="keywordflow">return</span> ((o1.x() == o2.x()) &amp;&amp; (o1.y() == o2.y())); }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>tchecker {</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classtchecker_1_1allocation__size__t_3_01cto__t_01_4.html">   32</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">class </span><a class="code" href="classtchecker_1_1allocation__size__t.html">allocation_size_t</a>&lt;<a class="code" href="classcto__t.html">cto_t</a>&gt; {</div>
@@ -660,7 +660,7 @@ $(function() {
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;std::size_t <a class="code" href="classhash.html">hash</a>(<a class="code" href="classhto__t.html">hto_t</a> <span class="keyword">const</span> &amp; o) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(o.x()); }</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keywordtype">bool</span> operator==(<a class="code" href="classhto__t.html">hto_t</a> <span class="keyword">const</span> &amp; o1, <a class="code" href="classhto__t.html">hto_t</a> <span class="keyword">const</span> &amp; o2) { <span class="keywordflow">return</span> o1.x() == o2.x(); }</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="db__safe_8hh.html#a0c067befc5a863b70a62802f082fd088">operator==</a>(<a class="code" href="classhto__t.html">hto_t</a> <span class="keyword">const</span> &amp; o1, <a class="code" href="classhto__t.html">hto_t</a> <span class="keyword">const</span> &amp; o2) { <span class="keywordflow">return</span> o1.x() == o2.x(); }</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keyword">namespace </span>tchecker {</div>
 <div class="line"><a name="l00593"></a><span class="lineno"><a class="line" href="classtchecker_1_1allocation__size__t_3_01hto__t_01_4.html">  593</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">class </span><a class="code" href="classtchecker_1_1allocation__size__t.html">allocation_size_t</a>&lt;<a class="code" href="classhto__t.html">hto_t</a>&gt; {</div>
@@ -793,6 +793,7 @@ $(function() {
 <div class="ttc" id="aclasstchecker_1_1make__shared__t_html"><div class="ttname"><a href="classtchecker_1_1make__shared__t.html">tchecker::make_shared_t</a></div><div class="ttdoc">Functor to create a shared class from a given class. Adds a reference counter to the given class.</div><div class="ttdef"><b>Definition:</b> shared_objects.hh:48</div></div>
 <div class="ttc" id="aclasstchecker_1_1make__shared__t_html_a3e0198e73c1609624307fca40e9a4663"><div class="ttname"><a href="classtchecker_1_1make__shared__t.html#a3e0198e73c1609624307fca40e9a4663">tchecker::make_shared_t::destruct_and_deallocate</a></div><div class="ttdeci">static void destruct_and_deallocate(make_shared_t&lt; T, REFCOUNT, RESERVED &gt; *ptr)</div><div class="ttdoc">Object destruction and deallocation.</div><div class="ttdef"><b>Definition:</b> shared_objects.hh:126</div></div>
 <div class="ttc" id="aclasstchecker_1_1make__shared__t_html_a449fbe1f1bc8809f11c2db47d359a96a"><div class="ttname"><a href="classtchecker_1_1make__shared__t.html#a449fbe1f1bc8809f11c2db47d359a96a">tchecker::make_shared_t::allocate_and_construct</a></div><div class="ttdeci">static tchecker::make_shared_t&lt; T, REFCOUNT, RESERVED &gt; * allocate_and_construct(ARGS &amp;&amp;... args)</div><div class="ttdoc">Object allocation and construction.</div><div class="ttdef"><b>Definition:</b> shared_objects.hh:92</div></div>
+<div class="ttc" id="adb__safe_8hh_html_a0c067befc5a863b70a62802f082fd088"><div class="ttname"><a href="db__safe_8hh.html#a0c067befc5a863b70a62802f082fd088">tchecker::dbm::operator==</a></div><div class="ttdeci">constexpr bool operator==(struct db_t const &amp;db1, struct db_t const &amp;db2)</div><div class="ttdoc">Equality operator.</div><div class="ttdef"><b>Definition:</b> db_safe.hh:66</div></div>
 <div class="ttc" id="ahashtable_8hh_html"><div class="ttname"><a href="hashtable_8hh.html">hashtable.hh</a></div><div class="ttdoc">Hashtable of shared objects.</div></div>
 <div class="ttc" id="ashared__objects_8hh_html"><div class="ttname"><a href="shared__objects_8hh.html">shared_objects.hh</a></div><div class="ttdoc">shared objects with support for pool allocation and garbage collection</div></div>
 </div><!-- fragment --></div><!-- contents -->

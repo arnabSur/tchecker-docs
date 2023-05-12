@@ -24,7 +24,7 @@
 					<tr style="height: 56px;">
 						<td id="projectalign" style="padding-left: 0.5em;">
 							<div id="projectname">tchecker
-								&#160;<span id="projectnumber">0.3p</span>
+								&#160;<span id="projectnumber">0.5</span>
 							</div>
 						</td>
 					</tr>
@@ -169,11 +169,11 @@ $(function() {
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">void</span> vedge_destruct_and_deallocate(<a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> * vedge);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;std::ostream &amp; output(std::ostream &amp; os, <a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge, <a class="code" href="classtchecker_1_1system_1_1system__t.html">tchecker::system::system_t</a> <span class="keyword">const</span> &amp; system);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;std::ostream &amp; <a class="code" href="db_8hh.html#a70a659f51ca80db72ba927b13a498866">output</a>(std::ostream &amp; os, <a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge, <a class="code" href="classtchecker_1_1system_1_1system__t.html">tchecker::system::system_t</a> <span class="keyword">const</span> &amp; system);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;std::string <a class="code" href="refzg_2zone_8hh.html#af3fdc62e014a8c2e5102342491f023a8">to_string</a>(<a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge, <a class="code" href="classtchecker_1_1system_1_1system__t.html">tchecker::system::system_t</a> <span class="keyword">const</span> &amp; system);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordtype">int</span> lexical_cmp(<a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge1, <a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge2);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordtype">int</span> <a class="code" href="dbm_8hh.html#ae92c46148b9f5703f1140b97abf414d1">lexical_cmp</a>(<a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge1, <a class="code" href="classtchecker_1_1vedge__t.html">tchecker::vedge_t</a> <span class="keyword">const</span> &amp; vedge2);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">using</span> shared_vedge_t = <a class="code" href="classtchecker_1_1make__shared__t.html">tchecker::make_shared_t&lt;tchecker::vedge_t&gt;</a>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
@@ -222,6 +222,8 @@ $(function() {
 <div class="ttc" id="aclasstchecker_1_1vedge__t_html_acaeb7fe540c0d44d3b4bb464caf87c05"><div class="ttname"><a href="classtchecker_1_1vedge__t.html#acaeb7fe540c0d44d3b4bb464caf87c05">tchecker::vedge_t::size</a></div><div class="ttdeci">tchecker::edge_array_t::capacity_t size() const</div><div class="ttdoc">Accessor.</div><div class="ttdef"><b>Definition:</b> vedge.hh:71</div></div>
 <div class="ttc" id="aclasstchecker_1_1vedge__t_html_ad54c471d59ba81b682c8e3aeab900eae"><div class="ttname"><a href="classtchecker_1_1vedge__t.html#ad54c471d59ba81b682c8e3aeab900eae">tchecker::vedge_t::operator=</a></div><div class="ttdeci">tchecker::vedge_t &amp; operator=(tchecker::vedge_t const &amp;)=default</div><div class="ttdoc">Assignment operator.</div></div>
 <div class="ttc" id="aclasstchecker_1_1vedge__t_html_ad91538e738173cd5e5356f10bb8d02ae"><div class="ttname"><a href="classtchecker_1_1vedge__t.html#ad91538e738173cd5e5356f10bb8d02ae">tchecker::vedge_t::begin_array</a></div><div class="ttdeci">array_iterator_t begin_array()</div><div class="ttdoc">Accessor.</div><div class="ttdef"><b>Definition:</b> vedge.cc:41</div></div>
+<div class="ttc" id="adb_8hh_html_a70a659f51ca80db72ba927b13a498866"><div class="ttname"><a href="db_8hh.html#a70a659f51ca80db72ba927b13a498866">tchecker::dbm::output</a></div><div class="ttdeci">std::ostream &amp; output(std::ostream &amp;os, tchecker::dbm::db_t const &amp;db)</div><div class="ttdoc">Output a difference bound.</div><div class="ttdef"><b>Definition:</b> db.cc:16</div></div>
+<div class="ttc" id="adbm_8hh_html_ae92c46148b9f5703f1140b97abf414d1"><div class="ttname"><a href="dbm_8hh.html#ae92c46148b9f5703f1140b97abf414d1">tchecker::dbm::lexical_cmp</a></div><div class="ttdeci">int lexical_cmp(tchecker::dbm::db_t const *dbm1, tchecker::clock_id_t dim1, tchecker::dbm::db_t const *dbm2, tchecker::clock_id_t dim2)</div><div class="ttdoc">Lexical ordering.</div><div class="ttdef"><b>Definition:</b> dbm.cc:833</div></div>
 <div class="ttc" id="arefzg_2zone_8hh_html_af3fdc62e014a8c2e5102342491f023a8"><div class="ttname"><a href="refzg_2zone_8hh.html#af3fdc62e014a8c2e5102342491f023a8">tchecker::to_string</a></div><div class="ttdeci">std::string to_string(tchecker::refzg::zone_t const &amp;zone, tchecker::clock_index_t const &amp;index)</div><div class="ttdoc">Output to string.</div><div class="ttdef"><b>Definition:</b> zone.cc:116</div></div>
 <div class="ttc" id="ashared__objects_8hh_html"><div class="ttname"><a href="shared__objects_8hh.html">shared_objects.hh</a></div><div class="ttdoc">shared objects with support for pool allocation and garbage collection</div></div>
 <div class="ttc" id="asystem_2system_8hh_html"><div class="ttname"><a href="system_2system_8hh.html">system.hh</a></div><div class="ttdoc">System of processes.</div></div>

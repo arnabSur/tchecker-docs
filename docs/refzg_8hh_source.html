@@ -24,7 +24,7 @@
 					<tr style="height: 56px;">
 						<td id="projectalign" style="padding-left: 0.5em;">
 							<div id="projectname">tchecker
-								&#160;<span id="projectnumber">0.3p</span>
+								&#160;<span id="projectnumber">0.5</span>
 							</div>
 						</td>
 					</tr>
@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="refzg_8hh.html#a11bc03c90db2dfbc66b90a0af03fc66f">   46</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classtchecker_1_1range__t.html">initial_range_t</a> = <a class="code" href="classtchecker_1_1range__t.html">tchecker::ta::initial_range_t</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="refzg_8hh.html#aa86105e4fe7c60fbf2d1b79f6818a485">   53</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classtchecker_1_1range__t.html">tchecker::refzg::initial_range_t</a> initial_edges(<a class="code" href="classtchecker_1_1ta_1_1system__t.html">tchecker::ta::system_t</a> <span class="keyword">const</span> &amp; system)</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="refzg_8hh.html#aa86105e4fe7c60fbf2d1b79f6818a485">   53</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classtchecker_1_1range__t.html">tchecker::refzg::initial_range_t</a> <a class="code" href="refzg_8hh.html#aa86105e4fe7c60fbf2d1b79f6818a485">initial_edges</a>(<a class="code" href="classtchecker_1_1ta_1_1system__t.html">tchecker::ta::system_t</a> <span class="keyword">const</span> &amp; system)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> tchecker::ta::initial_edges(system);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="refzg_8hh.html#a5e9172817b8d847c3c990e79ba527665">  134</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classtchecker_1_1range__t.html">outgoing_edges_range_t</a> = <a class="code" href="classtchecker_1_1range__t.html">tchecker::ta::outgoing_edges_range_t</a>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">inline</span> <a class="code" href="classtchecker_1_1range__t.html">tchecker::refzg::outgoing_edges_range_t</a></div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="refzg_8hh.html#ad36c5c8b2f5f0b96af6a7bcd37439e26">  143</a></span>&#160;outgoing_edges(<a class="code" href="classtchecker_1_1ta_1_1system__t.html">tchecker::ta::system_t</a> <span class="keyword">const</span> &amp; system,</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="refzg_8hh.html#ad36c5c8b2f5f0b96af6a7bcd37439e26">  143</a></span>&#160;<a class="code" href="refzg_8hh.html#ad36c5c8b2f5f0b96af6a7bcd37439e26">outgoing_edges</a>(<a class="code" href="classtchecker_1_1ta_1_1system__t.html">tchecker::ta::system_t</a> <span class="keyword">const</span> &amp; system,</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;               <a class="code" href="classtchecker_1_1intrusive__shared__ptr__t.html">tchecker::intrusive_shared_ptr_t&lt;tchecker::shared_vloc_t const&gt;</a> <span class="keyword">const</span> &amp; vloc)</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">return</span> tchecker::ta::outgoing_edges(system, vloc);</div>
@@ -410,6 +410,8 @@ $(function() {
 <div class="ttc" id="arefzg_8hh_html_a9c24d490b6feec2c557761a64fae0580"><div class="ttname"><a href="refzg_8hh.html#a9c24d490b6feec2c557761a64fae0580">tchecker::refzg::reference_clock_variables_type_t</a></div><div class="ttdeci">reference_clock_variables_type_t</div><div class="ttdoc">Type of reference clocks.</div><div class="ttdef"><b>Definition:</b> refzg.hh:587</div></div>
 <div class="ttc" id="arefzg_8hh_html_a9c24d490b6feec2c557761a64fae0580a603d3024df9617b4b189de9344939347"><div class="ttname"><a href="refzg_8hh.html#a9c24d490b6feec2c557761a64fae0580a603d3024df9617b4b189de9344939347">tchecker::refzg::SINGLE_REFERENCE_CLOCKS</a></div><div class="ttdeci">@ SINGLE_REFERENCE_CLOCKS</div><div class="ttdef"><b>Definition:</b> refzg.hh:588</div></div>
 <div class="ttc" id="arefzg_8hh_html_a9c24d490b6feec2c557761a64fae0580aec45a5acad6eb437c90ad80a1d5f6c7c"><div class="ttname"><a href="refzg_8hh.html#a9c24d490b6feec2c557761a64fae0580aec45a5acad6eb437c90ad80a1d5f6c7c">tchecker::refzg::PROCESS_REFERENCE_CLOCKS</a></div><div class="ttdeci">@ PROCESS_REFERENCE_CLOCKS</div><div class="ttdef"><b>Definition:</b> refzg.hh:589</div></div>
+<div class="ttc" id="arefzg_8hh_html_aa86105e4fe7c60fbf2d1b79f6818a485"><div class="ttname"><a href="refzg_8hh.html#aa86105e4fe7c60fbf2d1b79f6818a485">tchecker::refzg::initial_edges</a></div><div class="ttdeci">tchecker::refzg::initial_range_t initial_edges(tchecker::ta::system_t const &amp;system)</div><div class="ttdoc">Accessor to initial edges.</div><div class="ttdef"><b>Definition:</b> refzg.hh:53</div></div>
+<div class="ttc" id="arefzg_8hh_html_ad36c5c8b2f5f0b96af6a7bcd37439e26"><div class="ttname"><a href="refzg_8hh.html#ad36c5c8b2f5f0b96af6a7bcd37439e26">tchecker::refzg::outgoing_edges</a></div><div class="ttdeci">tchecker::refzg::outgoing_edges_range_t outgoing_edges(tchecker::ta::system_t const &amp;system, tchecker::intrusive_shared_ptr_t&lt; tchecker::shared_vloc_t const &gt; const &amp;vloc)</div><div class="ttdoc">Accessor to outgoing edges.</div><div class="ttdef"><b>Definition:</b> refzg.hh:143</div></div>
 <div class="ttc" id="ashared__objects_8hh_html"><div class="ttname"><a href="shared__objects_8hh.html">shared_objects.hh</a></div><div class="ttdoc">shared objects with support for pool allocation and garbage collection</div></div>
 <div class="ttc" id="ata_2system_8hh_html"><div class="ttname"><a href="ta_2system_8hh.html">system.hh</a></div><div class="ttdoc">System of processes for timed automata.</div></div>
 <div class="ttc" id="ata_8hh_html"><div class="ttname"><a href="ta_8hh.html">ta.hh</a></div><div class="ttdoc">Timed automata.</div></div>

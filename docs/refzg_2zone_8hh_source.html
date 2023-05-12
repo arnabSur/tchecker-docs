@@ -24,7 +24,7 @@
 					<tr style="height: 56px;">
 						<td id="projectalign" style="padding-left: 0.5em;">
 							<div id="projectname">tchecker
-								&#160;<span id="projectnumber">0.3p</span>
+								&#160;<span id="projectnumber">0.5</span>
 							</div>
 						</td>
 					</tr>
@@ -171,7 +171,7 @@ $(function() {
 <div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classtchecker_1_1refzg_1_1zone__t.html#a77bfa544a3a4978e3fe311ffe3a27351">  296</a></span>&#160;  std::shared_ptr&lt;tchecker::reference_clock_variables_t const&gt; <a class="code" href="classtchecker_1_1refzg_1_1zone__t.html#a77bfa544a3a4978e3fe311ffe3a27351">_ref_clocks</a>; </div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="refzg_2zone_8hh.html#a1d59943c086e3effcc6f2b27cc1c0f1a">  304</a></span>&#160;<span class="keyword">inline</span> std::size_t hash_value(<a class="code" href="classtchecker_1_1refzg_1_1zone__t.html">tchecker::refzg::zone_t</a> <span class="keyword">const</span> &amp; zone) { <span class="keywordflow">return</span> zone.<a class="code" href="classtchecker_1_1refzg_1_1zone__t.html#a1a7d966519308f717c4bf94cf6a0fdc2">hash</a>(); }</div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="refzg_2zone_8hh.html#a1d59943c086e3effcc6f2b27cc1c0f1a">  304</a></span>&#160;<span class="keyword">inline</span> std::size_t <a class="code" href="refzg_2state_8hh.html#ab9c15121a8b9720b7e66b46d8ebeca40">hash_value</a>(<a class="code" href="classtchecker_1_1refzg_1_1zone__t.html">tchecker::refzg::zone_t</a> <span class="keyword">const</span> &amp; zone) { <span class="keywordflow">return</span> zone.<a class="code" href="classtchecker_1_1refzg_1_1zone__t.html#a1a7d966519308f717c4bf94cf6a0fdc2">hash</a>(); }</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;} <span class="comment">// end of namespace refzg</span></div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
@@ -258,6 +258,7 @@ $(function() {
 <div class="ttc" id="aclockbounds_8hh_html"><div class="ttname"><a href="clockbounds_8hh.html">clockbounds.hh</a></div><div class="ttdoc">Clock bounds in a system.</div></div>
 <div class="ttc" id="aclocks_8hh_html"><div class="ttname"><a href="clocks_8hh.html">clocks.hh</a></div><div class="ttdoc">Clock variables and operations.</div></div>
 <div class="ttc" id="arefdbm_8hh_html"><div class="ttname"><a href="refdbm_8hh.html">refdbm.hh</a></div><div class="ttdoc">Functions on DBMs with reference clocks.</div></div>
+<div class="ttc" id="arefzg_2state_8hh_html_ab9c15121a8b9720b7e66b46d8ebeca40"><div class="ttname"><a href="refzg_2state_8hh.html#ab9c15121a8b9720b7e66b46d8ebeca40">tchecker::refzg::hash_value</a></div><div class="ttdeci">std::size_t hash_value(tchecker::refzg::state_t const &amp;s)</div><div class="ttdoc">Hash.</div><div class="ttdef"><b>Definition:</b> state.cc:103</div></div>
 <div class="ttc" id="arefzg_2zone_8hh_html_a011ddcb6d176463425134084748785ba"><div class="ttname"><a href="refzg_2zone_8hh.html#a011ddcb6d176463425134084748785ba">tchecker::refzg::zone_destruct_and_deallocate</a></div><div class="ttdeci">void zone_destruct_and_deallocate(tchecker::refzg::zone_t *zone)</div><div class="ttdoc">Destruction and deallocation of zones implemented by DBMs with reference clocks.</div></div>
 <div class="ttc" id="arefzg_2zone_8hh_html_a0b619d10dbb8bac0d457114a7ad11094"><div class="ttname"><a href="refzg_2zone_8hh.html#a0b619d10dbb8bac0d457114a7ad11094">tchecker::refzg::zone_allocate_and_construct</a></div><div class="ttdeci">tchecker::refzg::zone_t * zone_allocate_and_construct(std::shared_ptr&lt; tchecker::reference_clock_variables_t const &gt; const &amp;ref_clocks, ARGS &amp;&amp;... args)</div><div class="ttdoc">Allocation and construction of zones implemented by DBMs with reference clocks.</div><div class="ttdef"><b>Definition:</b> zone.hh:356</div></div>
 <div class="ttc" id="arefzg_2zone_8hh_html_af3fdc62e014a8c2e5102342491f023a8"><div class="ttname"><a href="refzg_2zone_8hh.html#af3fdc62e014a8c2e5102342491f023a8">tchecker::to_string</a></div><div class="ttdeci">std::string to_string(tchecker::refzg::zone_t const &amp;zone, tchecker::clock_index_t const &amp;index)</div><div class="ttdoc">Output to string.</div><div class="ttdef"><b>Definition:</b> zone.cc:116</div></div>

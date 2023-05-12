@@ -24,7 +24,7 @@
 					<tr style="height: 56px;">
 						<td id="projectalign" style="padding-left: 0.5em;">
 							<div id="projectname">tchecker
-								&#160;<span id="projectnumber">0.3p</span>
+								&#160;<span id="projectnumber">0.5</span>
 							</div>
 						</td>
 					</tr>
@@ -99,8 +99,8 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;static_assert(std::is_same&lt;tchecker::integer_t, tchecker::dbm::db_t&gt;::value, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="db__unsafe_8hh.html#a48dd20f1b7ba5d1790088316b957e303">   42</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="db__safe_8hh.html#a5260e25c43930046fd609cb8e1a0e6a7">comparator_t</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  LT = 0, </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  LE = 1, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="db__safe_8hh.html#a48dd20f1b7ba5d1790088316b957e303ad9030f92f36c3b647b4712523620b785">LT</a> = 0, </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="db__safe_8hh.html#a48dd20f1b7ba5d1790088316b957e303a6f9952ea48157f2c89ce7e381ca8af80">LE</a> = 1, </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="structtchecker_1_1dbm_1_1db__t.html">tchecker::dbm::db_t</a> <span class="keyword">const</span> INF_VALUE = tchecker::int_maxval &gt;&gt; 1; </div>
@@ -156,6 +156,8 @@ $(function() {
 <div class="ttc" id="abasictypes_8hh_html"><div class="ttname"><a href="basictypes_8hh.html">basictypes.hh</a></div><div class="ttdoc">Definition of basic types for models.</div></div>
 <div class="ttc" id="aclasshash_html"><div class="ttname"><a href="classhash.html">hash</a></div><div class="ttdoc">Specialisation of std::hash&lt;&gt; for tchecker::intrusive_shared_ptr_t.</div></div>
 <div class="ttc" id="adb__safe_8hh_html_a1dd554af5ea3fbf5b977985f5be93050"><div class="ttname"><a href="db__safe_8hh.html#a1dd554af5ea3fbf5b977985f5be93050">tchecker::dbm::LT_INFINITY</a></div><div class="ttdeci">constexpr tchecker::dbm::db_t const LT_INFINITY</div><div class="ttdef"><b>Definition:</b> db_safe.hh:89</div></div>
+<div class="ttc" id="adb__safe_8hh_html_a48dd20f1b7ba5d1790088316b957e303a6f9952ea48157f2c89ce7e381ca8af80"><div class="ttname"><a href="db__safe_8hh.html#a48dd20f1b7ba5d1790088316b957e303a6f9952ea48157f2c89ce7e381ca8af80">tchecker::dbm::LE</a></div><div class="ttdeci">@ LE</div><div class="ttdef"><b>Definition:</b> db_safe.hh:29</div></div>
+<div class="ttc" id="adb__safe_8hh_html_a48dd20f1b7ba5d1790088316b957e303ad9030f92f36c3b647b4712523620b785"><div class="ttname"><a href="db__safe_8hh.html#a48dd20f1b7ba5d1790088316b957e303ad9030f92f36c3b647b4712523620b785">tchecker::dbm::LT</a></div><div class="ttdeci">@ LT</div><div class="ttdef"><b>Definition:</b> db_safe.hh:28</div></div>
 <div class="ttc" id="adb__safe_8hh_html_a5260e25c43930046fd609cb8e1a0e6a7"><div class="ttname"><a href="db__safe_8hh.html#a5260e25c43930046fd609cb8e1a0e6a7">tchecker::dbm::comparator_t</a></div><div class="ttdeci">comparator_t</div><div class="ttdoc">Type of difference bound comparator: &lt; or &lt;=.</div><div class="ttdef"><b>Definition:</b> db_safe.hh:27</div></div>
 <div class="ttc" id="adb__safe_8hh_html_a6addd6978ed42d16e3db65fc47202d68"><div class="ttname"><a href="db__safe_8hh.html#a6addd6978ed42d16e3db65fc47202d68">tchecker::dbm::value</a></div><div class="ttdeci">tchecker::integer_t value(tchecker::dbm::db_t const &amp;db)</div><div class="ttdoc">Accessor.</div><div class="ttdef"><b>Definition:</b> db_safe.hh:239</div></div>
 <div class="ttc" id="adb__safe_8hh_html_ab848573ecc7072e9b8d242cbc65b41b3"><div class="ttname"><a href="db__safe_8hh.html#ab848573ecc7072e9b8d242cbc65b41b3">tchecker::dbm::max</a></div><div class="ttdeci">tchecker::dbm::db_t max(tchecker::dbm::db_t const &amp;db1, tchecker::dbm::db_t const &amp;db2)</div><div class="ttdoc">Maximum of difference bounds.</div><div class="ttdef"><b>Definition:</b> db_safe.hh:222</div></div>

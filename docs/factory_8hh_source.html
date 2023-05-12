@@ -24,7 +24,7 @@
 					<tr style="height: 56px;">
 						<td id="projectalign" style="padding-left: 0.5em;">
 							<div id="projectname">tchecker
-								&#160;<span id="projectnumber">0.3p</span>
+								&#160;<span id="projectnumber">0.5</span>
 							</div>
 						</td>
 					</tr>
@@ -98,7 +98,7 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  FAST_REMOVE_STACK, </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <a class="code" href="classtchecker_1_1waiting_1_1waiting__t.html">tchecker::waiting::waiting_t&lt;T&gt;</a> * <a class="code" href="pzg_8hh.html#a06555bd68ec26f0f8364714517093c49">factory</a>(<span class="keyword">enum</span> policy_t policy)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <a class="code" href="classtchecker_1_1waiting_1_1waiting__t.html">tchecker::waiting::waiting_t&lt;T&gt;</a> * <a class="code" href="refzg_8hh.html#a528e3f44938cbbc653ec296197e9af43">factory</a>(<span class="keyword">enum</span> policy_t policy)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">switch</span> (policy) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">case</span> tchecker::waiting::QUEUE:</div>
@@ -123,8 +123,8 @@ $(function() {
 <div class="ttc" id="aclasstchecker_1_1waiting_1_1queue__t_html"><div class="ttname"><a href="classtchecker_1_1waiting_1_1queue__t.html">tchecker::waiting::queue_t</a></div><div class="ttdoc">Waiting container implementing a queue (fifo)</div><div class="ttdef"><b>Definition:</b> queue.hh:29</div></div>
 <div class="ttc" id="aclasstchecker_1_1waiting_1_1stack__t_html"><div class="ttname"><a href="classtchecker_1_1waiting_1_1stack__t.html">tchecker::waiting::stack_t</a></div><div class="ttdoc">Waiting container implementing a stack (lifo)</div><div class="ttdef"><b>Definition:</b> stack.hh:29</div></div>
 <div class="ttc" id="aclasstchecker_1_1waiting_1_1waiting__t_html"><div class="ttname"><a href="classtchecker_1_1waiting_1_1waiting__t.html">tchecker::waiting::waiting_t</a></div><div class="ttdoc">Interface to waiting container.</div><div class="ttdef"><b>Definition:</b> waiting.hh:28</div></div>
-<div class="ttc" id="apzg_8hh_html_a06555bd68ec26f0f8364714517093c49"><div class="ttname"><a href="pzg_8hh.html#a06555bd68ec26f0f8364714517093c49">tchecker::pzg::factory</a></div><div class="ttdeci">tchecker::pzg::pzg_t * factory(std::shared_ptr&lt; tchecker::ta::system_t const &gt; const &amp;system)</div><div class="ttdoc">Factory of zone graphs.</div></div>
 <div class="ttc" id="aqueue_8hh_html"><div class="ttname"><a href="queue_8hh.html">queue.hh</a></div><div class="ttdoc">Waiting queue (fifo)</div></div>
+<div class="ttc" id="arefzg_8hh_html_a528e3f44938cbbc653ec296197e9af43"><div class="ttname"><a href="refzg_8hh.html#a528e3f44938cbbc653ec296197e9af43">tchecker::refzg::factory</a></div><div class="ttdeci">tchecker::refzg::refzg_t * factory(std::shared_ptr&lt; tchecker::ta::system_t const &gt; const &amp;system, enum tchecker::refzg::reference_clock_variables_type_t refclocks_type, enum tchecker::refzg::semantics_type_t semantics_type, tchecker::integer_t spread, std::size_t block_size, std::size_t table_size)</div><div class="ttdoc">Factory of zone graphs with reference clocks.</div><div class="ttdef"><b>Definition:</b> refzg.cc:222</div></div>
 <div class="ttc" id="atchecker_2include_2tchecker_2waiting_2stack_8hh_html"><div class="ttname"><a href="tchecker_2include_2tchecker_2waiting_2stack_8hh.html">stack.hh</a></div><div class="ttdoc">Waiting stack (lifo)</div></div>
 <div class="ttc" id="awaiting_8hh_html"><div class="ttname"><a href="waiting_8hh.html">waiting.hh</a></div><div class="ttdoc">Waiting containers.</div></div>
 </div><!-- fragment --></div><!-- contents -->
