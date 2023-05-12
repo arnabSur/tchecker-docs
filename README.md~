@@ -1,12 +1,12 @@
 # TChecker
 
+[![Build and test TChecker](https://github.com/arnabSur/tchecker/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/ticktac-project/tchecker/actions/workflows/build-and-test.yml)
 [![License](https://img.shields.io/badge/license-MIT-informational.svg)](https://github.com/ticktac-project/tchecker/blob/master/LICENSE)
+
 
 ## Description
 
-This is the documentation for a [fork](https://github.com/arnabSur/tchecker) of [TChecker](https://github.com/ticktac-project/tchecker).
-
-TChecker is an *open-source* model-checker for timed systems. TChecker is
+This is TChecker, an *open-source* model-checker for timed systems. TChecker is
 written in C++17 and provides a library of classes to describe timed systems,
 to compute the corresponding timed automata, to compute its semantics, as well
 as symbolic representations and algorithms to check requirements over timed
